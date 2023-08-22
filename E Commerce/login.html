@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container-fluid mt-2">
+            <a class="navbar-brand ms-4">T-MART</a>
+            <div class="d-grid d-flex justify-content-md-end me-3">
+                <button type="button" class="btn  me-1 text-primary"><a href="home.html"> HOME </a></button>
+                <button type="button" class="btn  me-1 text-primary"><a href="login.html"> LOG IN </a></button>
+                <button type="button" class="btn ms-1 text-danger"><a href="signup.html"> SIGN IN </a></button>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- login form -->
+    <div class="container d-flex justify-content-center mt-4">
+        <div class="card mt-5" style="max-width: 1000px;">
+            <div class="row g-1">
+                <div class="col-md-4">
+                    <img src="login1.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-md-8" id="img">
+                    <div class="card-body mt-3 ">
+                        <h5 class="card-title mt-4 text-center">LOG IN</h5>
+                        <center>
+                            <div class="form-floating  mb-3 col-6 mt-5">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating col-6">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                        </center>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                            <button class="btn btn-outline-primary" type="button">LOG IN</button>
+                            <button class="btn btn-outline-danger mt-1" type="button"><a href="signup.html"> SIGN IN </a> </button>
+                            <h6 class="text-center mt-2">-------------------- or ---------------------</h6>
+                            <i class="fa-brands fa-google text-center mt-3  " style="color: #000000;"><i
+                                    class="fa-brands fa-facebook ms-3" style="color: #000000;"></i></i>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login form -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/243e4e1ad2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

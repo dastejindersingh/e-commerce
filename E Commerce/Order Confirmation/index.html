@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("gFHcChX0c2IHtgWJi");
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container-fluid mt-2">
+            <a class="navbar-brand ms-4">T-MART</a>
+            <div class="d-grid d-flex justify-content-md-end me-3">
+                <a href="..."><i class="fa-sharp fa-solid fa-bag-shopping mt-2 me-3"
+                        style="color:rgb(216, 4, 4);"></i></a>
+                <button type="button" class="btn  me-1 text-primary"><a href="home.html"
+                        style="text-decoration: none; color: inherit;"> HOME </a></button>
+                <button type="button" class="btn  me-1 text-primary"><a href="login.html"
+                        style="text-decoration: none; color: inherit;"> LOG IN </a></button>
+                <button type="button" class="btn ms-1 text-danger"><a href="signup.html"
+                        style="text-decoration: none; color: inherit;"> SIGN IN </a></button>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- MAIN DETAILS -->
+    <div class="container d-flex justify-content-center">
+        <div class="card border border border-0 mt-5 w-50 p-3 h-auto ">
+            <div class="card-body">
+                <h5 class="card-title text-center text-dark fw-bold">CHECKOUT</h5>
+
+                <div class="container-fluid">
+                    <div class="card mb-1 mt-4">
+                        <img src="checkout.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <!-- VIEW DETAILS -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne ">
+                                    1. View Details
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Airpods (3rd generation) feature Spatial Audio that places
+                                    sound all around you, Adaptive EQ that tunes music to your ears, and longer battery
+                                    life. It's all sweat and water resistant and delivers an experience that's simply
+                                    magical.</div>
+                            </div>
+                        </div>
+                        <!-- END VIEW DETAILS -->
+
+                        <!-- SHIPPING ADDRESS -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    2. Shipping Address
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Address</label>
+                                        <input type="address" id="addres1" class="form-control" id=""
+                                            placeholder="Enter Address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Address 2
+                                            (Optional)</label>
+                                        <input type="address" id="addres2" class="form-control" id=""
+                                            placeholder="Enter Address 2">
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-sm-7">
+                                            <label for="exampleFormControlInput1" class="form-label">Country</label>
+                                            <input type="text" class="form-control" id="country" placeholder="Country"
+                                                aria-label="Country">
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="exampleFormControlInput1" class="form-label">State</label>
+                                            <input type="text" class="form-control" id="state" placeholder="State"
+                                                aria-label="State">
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="exampleFormControlInput1" class="form-label">Zip</label>
+                                            <input type="text" class="form-control" id="zip" placeholder="Zip"
+                                                aria-label="Zip">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Shipping Address is the same as Billing Address.
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Save as default Shipping Address.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END SHIPPING ADDRESS -->
+
+                        <!-- CHOOSE A PAYMENT METHOD  -->
+                        <div class="accordion-item"> 
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    3. Choose a Payment Method
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            UPI (Paytm, PhonePay, Google Pay, etc).
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Credit or Debit Card
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Net Banking
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Cash On Delivery
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CHOOSE A PAYMENT METHOD  -->
+
+                        <!-- ADD GIFT CARD OR PROMO CARD -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    4. Add Gift Card or Promo Code
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="container mt-3">
+                                        <form class="row g-2">
+                                            <div class="col-auto">
+                                                <input type="text" class="form-control" id="text"
+                                                    placeholder="Enter Code">
+                                            </div>
+                                            <div class="col-auto">
+                                                <button type="submit" class="btn btn-primary mb-3">Apply</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END GET IT BY  -->
+
+
+                        <!-- GET IT BY  -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    5. Get it by
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Saturday, 22 July 2023
+                                    (Free Delivery).
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END GET IT BY  -->
+
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-4">
+                        <button class="btn btn-outline-primary fw-bold" onclick="sendMail()">CONTINUE</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN DETAILS -->
+
+
+
+
+    <!-- footer -->
+    <footer class="text-center text-white mt-4" style="background-color: #00000000;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white text-dark p-3 bg-dark">
+            © 2023 Copyright:
+            <a class="text-white">T-Mart.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

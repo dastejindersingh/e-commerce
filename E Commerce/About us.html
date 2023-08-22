@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            font-size: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+
+            overflow-y: scroll;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+         /* About Section  */
+        .about {
+            width: 100%;
+            min-height: 50vh;
+            padding: 10rem 5rem;
+            flex-direction: column;
+
+        }
+
+        .about .about-info {
+            text-align: center;
+        }
+
+        .about .about-info .about-info-heading {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            color: black;
+        }
+
+        .about .about-info .about-info-desc {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            margin-top: 10px;
+        }
+
+        .about .about-info .about-info-button {
+            padding: 1.6rem 2.6rem;
+            display: inline-block;
+            background-color: rgb(238, 204, 10);
+            color: black;
+            text-decoration: none;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+
+        .about .about-info .about-info-button:hover {
+            padding: 1.6rem 2.6rem;
+            display: inline-block;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        .about .about-img .about-img-wrapper {
+            margin-top: 50px;
+            height: auto;
+            max-width: 350px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about .about-img .about-img-wrapper img {
+            height: 90%;
+            width: 100%;
+        }
+
+        .about .about-img .about-img-wrapper::after {
+            position: absolute;
+            content: '';
+            right: -4rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 90%;
+            height: 522px;
+            background-color: rgba(218, 165, 32, 0.865);
+            z-index: -1;
+        }
+
+        /* Media querry for dekstop and tab */
+        @media only screen and (min-width:768px) {
+
+            .about {
+                width: 80%;
+                margin: 0 auto;
+                flex-direction: row;
+            }
+
+            .about .about-info {
+                width: 50%;
+                text-align: left;
+                padding-right: 17rem;
+            }
+        }
+
+
+             /* End About Section  */
+    </style>
+</head>
+
+<body>
+
+
+    <!--  About Section -->
+    <section id="about" class="about container">
+        <div class="about-info">
+            <h1 class="about-info-heading">About Me</h1>
+            <p class="about-info-desc"> Hi, I’m Das Tejinder Singh and I’m a Frontend Developer. My current focus is
+                optimizing customer experience. My background is in Infomation Techonolgy. Before joining this field, I
+                like to Work in Coding. I work in many programming languages like Java, Mysql, HTML, CSS etc. I’m
+                excited
+                to work with you all to solve our clients’ biggest challenges!
+            </p>
+            <a href="..." type="button"
+                class="about-info-button">Download Resume</a>
+        </div>
+        <div class="about-img">
+            <div class="about-img-wrapper">
+                <img src="myimg1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End About Section  -->
+
+
+
+
+
+
+</body>
+
+</html>
